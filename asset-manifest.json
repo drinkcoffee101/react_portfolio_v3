@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/drinkcoffee101/react_portfolio_v3/static/css/main.5f361e03.chunk.css",
+    "main.js": "/drinkcoffee101/react_portfolio_v3/static/js/main.0eaa560c.chunk.js",
+    "main.js.map": "/drinkcoffee101/react_portfolio_v3/static/js/main.0eaa560c.chunk.js.map",
+    "runtime-main.js": "/drinkcoffee101/react_portfolio_v3/static/js/runtime-main.35c72254.js",
+    "runtime-main.js.map": "/drinkcoffee101/react_portfolio_v3/static/js/runtime-main.35c72254.js.map",
+    "static/js/2.95bbdd7c.chunk.js": "/drinkcoffee101/react_portfolio_v3/static/js/2.95bbdd7c.chunk.js",
+    "static/js/2.95bbdd7c.chunk.js.map": "/drinkcoffee101/react_portfolio_v3/static/js/2.95bbdd7c.chunk.js.map",
+    "index.html": "/drinkcoffee101/react_portfolio_v3/index.html",
+    "precache-manifest.e07b4ef402a22942e4c805a48a8000ae.js": "/drinkcoffee101/react_portfolio_v3/precache-manifest.e07b4ef402a22942e4c805a48a8000ae.js",
+    "service-worker.js": "/drinkcoffee101/react_portfolio_v3/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/drinkcoffee101/react_portfolio_v3/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.95bbdd7c.chunk.js.LICENSE.txt": "/drinkcoffee101/react_portfolio_v3/static/js/2.95bbdd7c.chunk.js.LICENSE.txt",
+    "static/media/DeronCoffieResume.pdf": "/drinkcoffee101/react_portfolio_v3/static/media/DeronCoffieResume.1433f23d.pdf",
+    "static/media/fire.jpg": "/drinkcoffee101/react_portfolio_v3/static/media/fire.b8f32feb.jpg",
+    "static/media/spark.jpg": "/drinkcoffee101/react_portfolio_v3/static/media/spark.f6058b58.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.35c72254.js",
+    "static/js/2.95bbdd7c.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.0eaa560c.chunk.js"
+  ]
+}
