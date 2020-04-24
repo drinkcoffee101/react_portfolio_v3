@@ -6,8 +6,8 @@ import { SimpleModal } from '../SimpleModal.component'
 
 const useStyles = makeStyles((theme) => ({
     mainItem: {
-        height: '500px',
-        width: '500px',
+        height: '400px',
+        width: '400px',
         backgroundColor: '#A2AF9F',
         justifyContent: 'center',
         alignItems: 'center',
@@ -15,8 +15,8 @@ const useStyles = makeStyles((theme) => ({
 
     },
     dot: {
-        height: '450px',
-        width: '450px',
+        height: '350px',
+        width: '350px',
         backgroundColor: '#A4F895',
         borderRadius: '50%',
         display: 'inline-block',
@@ -29,12 +29,12 @@ const useStyles = makeStyles((theme) => ({
         transitionTimingFunction: 'ease',
         boxShadow: '5px 5px 20px #00C2FF, -5px -5px 20px #FF8399',
         '&:hover': {
-            boxShadow: '5px 5px 20px #FF8399, -5px -5px 20px #00C2FF',
+            boxShadow: '5px 5px 11px #FF8399, -5px -5px 20px #00C2FF',
             transitionProperty: 'box-shadow height width',
             transitionDuration: '0.5s',
             transitionTimingFunction: 'ease',
-            height: '400px',
-            width: '400px',
+            height: '375px',
+            width: '375px',
         }
     },
     secondDot: {

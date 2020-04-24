@@ -52,7 +52,7 @@ export const MainCarousel = () => {
     const classes = useStyles();
 
     return (
-        <Grid container spacing={1} className={classes.content}>
+        <Grid container spacing={0} className={classes.content}>
             {Children.toArray(items.map(item =>
                 <Grid item>
                     <MainCard
