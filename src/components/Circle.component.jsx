@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import { Grid, Box } from '@material-ui/core';
-import { SimpleModal } from '../SimpleModal.component'
+import React, { useState } from 'react'
+import { makeStyles } from '@material-ui/core/styles'
+import Grid from '@material-ui/core/Grid'
+import Box from '@material-ui/core/Box'
+import { SimpleModal } from './SimpleModal.component'
 
 
 const useStyles = makeStyles((theme) => ({
@@ -98,14 +99,14 @@ const useStyles = makeStyles((theme) => ({
 
         }
     }
-}));
+}))
 
 
 
 
 export const Circle = ({ icon, content }) => {
 
-    const classes = useStyles();
+    const classes = useStyles()
     const [openModal, setOpenModal] = useState(false)
 
     const handleOpenModal = () => {
@@ -118,11 +119,9 @@ export const Circle = ({ icon, content }) => {
                 <div className={classes.dot}>
                     <div className={classes.secondDot}>
                         <div className={classes.thirdDot}>
-                            {/* <AccountCircleIcon className={classes.icon} /> */}
                             <div onClick={handleOpenModal}>
                                 {icon}
                                 <SimpleModal isOpen={openModal} closeModal={handleOpenModal}>
-                                    {/* <WorklistReturn {...props} /> */}
                                     {content}
                                 </SimpleModal>
                             </div>

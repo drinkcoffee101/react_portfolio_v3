@@ -1,6 +1,6 @@
 import React, { Children } from 'react'
-import { makeStyles } from '@material-ui/core/styles';
-import { Grid } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles'
+import Grid from '@material-ui/core/Grid'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin, faGoogle } from '@fortawesome/free-brands-svg-icons'
 import { faFileDownload } from '@fortawesome/free-solid-svg-icons'
@@ -29,48 +29,43 @@ const useStyles = makeStyles((theme) => ({
 
         }
     }
-}));
+}))
 
 
 const contactItems = [
     {
         href: 'https://github.com/drinkcoffee101',
-        linkStyle: 'github-link',
         icon: faGithub,
     },
     {
         href: 'https://www.linkedin.com/in/deron-coffie-067a3a3a/',
-        linkStyle: 'linkdin-link',
         icon: faLinkedin,
     },
     {
         href: 'mailto:dcoffie92@gmail.com',
-        linkStyle: 'google-link',
         icon: faGoogle,
     },
     {
         href: DeronCoffieResume,
-        linkStyle: 'resume-link',
         icon: faFileDownload,
-        message: '(Resume)'
     }
 ]
 
 export const Contact = () => {
-    const classes = useStyles();
+    const classes = useStyles()
     return (
         <div className={classes.root}>
             <Grid container spacing={4} className={classes.content}>
-                {Children.toArray(contactItems.map(item =>
+                {Children.toArray(contactItems.map(({ href, icon }) =>
                     <Grid item>
                         <a
-                            href={item.href}
+                            href={href}
                             target='_blank'
                             rel='noopener noreferrer'
                             download
                         >
                             <FontAwesomeIcon
-                                icon={item.icon}
+                                icon={icon}
                                 size='6x'
                                 className={classes.icon}
                             />

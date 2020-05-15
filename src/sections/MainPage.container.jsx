@@ -1,13 +1,14 @@
-import React, { Children } from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import { Grid, Box } from '@material-ui/core';
+import React, { Children } from 'react'
+import { makeStyles } from '@material-ui/core/styles'
+import Grid from '@material-ui/core/Grid'
+import Box from '@material-ui/core/Box'
 import { Circle } from '../components/Circle.component'
 import { About } from './About.component'
 import { Contact } from './Contact.component'
 import { MainCarousel } from '../components/Carousel.component'
-import AccountCircleOutlinedIcon from '@material-ui/icons/AccountCircleOutlined';
-import DashboardOutlinedIcon from '@material-ui/icons/DashboardOutlined';
-import RecordVoiceOverOutlinedIcon from '@material-ui/icons/RecordVoiceOverOutlined';
+import AccountCircleOutlinedIcon from '@material-ui/icons/AccountCircleOutlined'
+import DashboardOutlinedIcon from '@material-ui/icons/DashboardOutlined'
+import RecordVoiceOverOutlinedIcon from '@material-ui/icons/RecordVoiceOverOutlined'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -45,16 +46,15 @@ const useStyles = makeStyles((theme) => ({
             transitionProperty: 'opacity',
             transitionDuration: '0.5s',
             transitionTimingFunction: 'ease',
-
         }
     }
-}));
+}))
 
 
 
 export default function MainPage() {
 
-    const classes = useStyles();
+    const classes = useStyles()
 
     const pages = [
         {
@@ -80,11 +80,11 @@ export default function MainPage() {
                     container
                     className={classes.mainGrid}
                 >
-                    {Children.toArray(pages.map(page => (
-                        <Circle icon={page.icon} content={page.content} />
+                    {Children.toArray(pages.map(({icon, content}) => (
+                        <Circle icon={icon} content={content} />
                     )))}
                 </Grid>
             </Box>
         </div>
-    );
+    )
 }

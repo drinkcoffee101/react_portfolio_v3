@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 /* ------------------------------- Material UI Components ------------------------------- */
 import { makeStyles } from '@material-ui/core/styles'
 import Modal from '@material-ui/core/Modal'
-import { Box } from '@material-ui/core'
+import Box from '@material-ui/core/Box'
 
 const useStyles = makeStyles(theme => ({
     paper: {
